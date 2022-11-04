@@ -1,7 +1,8 @@
 
 ## Medical Care Management System
 
-Medical Care Management System consiste em uma plataforma web que auxilia no gerenciamento de pacientes e médicos de uma determinada clinica, formado basicamente por três tipos perfis, o Admin (atendente) que poderá adicionar os médicos (de forma que os médicos não poderão se inscrever), ver lista de pacientes, ver lista de médicos, remover médicos, o Client (paciente), onde os pacientes poderão realizar tarefas como se cadastrar, logar, visualizar seu perfil e ver os doutores disponíveis e o Cliente (médico) que terá acesso a funções semelhantes como logar, visualizar seu perfil, ver lista de pacientes e consultas.
+<dt>justify</dt>
+        <dd> Medical Care Management System consiste em uma plataforma web que auxilia no gerenciamento de pacientes e médicos de uma determinada clinica, formado basicamente por três tipos perfis, o Admin (atendente) que poderá adicionar os médicos (de forma que os médicos não poderão se inscrever), ver lista de pacientes, ver lista de médicos, remover médicos, o Client (paciente), onde os pacientes poderão realizar tarefas como se cadastrar, logar, visualizar seu perfil e ver os doutores disponíveis e o Cliente (médico) que terá acesso a funções semelhantes como logar, visualizar seu perfil, ver lista de pacientes e consultas.</dd>
 
 ### **Principais funcionalidades:**
 
@@ -11,43 +12,43 @@ Medical Care Management System consiste em uma plataforma web que auxilia no ger
 
 *Criar uma conta*
 
-Logar
+- Logar
 
-Visualizar seu perfil
+- Visualizar seu perfil
 
-Visualizar a lista de médicos
+- Visualizar a lista de médicos
 
-Marcar consulta
+- Marcar consulta
 
 *Pagar*
 
-Dar feedbacks
+- Dar feedbacks
 
-Ver relatório médico
+- Ver relatório médico
 
 **Do Cliente (Médicos):**
 
-Logar
+- Logar
 
-Visualizar seu perfil
+- Visualizar seu perfil
 
-Visualizar lista de pacientes
+- Visualizar lista de pacientes
 
-Ver consultas
+- Ver consultas
 
-Ver feedback dado pelos pacientes
+- Ver feedback dado pelos pacientes
 
-Escrever relatórios
+- Escrever relatórios
 
 **(Admin) Atendente:**
 
-Marcar consultas
+- Marcar consultas
 
-Ver lista de pacientes e médicos
+- Ver lista de pacientes e médicos
 
-Pagamento
+- Pagamento
 
-Adicionar e remover médicos
+- Adicionar e remover médicos
 
 ### Tecnologias utilizadas
 
