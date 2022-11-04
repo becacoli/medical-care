@@ -1,4 +1,4 @@
-## Medical Care Management System
+## :hospital: Medical Care Management System
 
 Medical Care Management System consiste em uma plataforma web que auxilia no gerenciamento de pacientes e médicos de uma determinada clinica, formado basicamente por três tipos perfis, o Admin (atendente) que poderá adicionar os médicos (de forma que os médicos não poderão se inscrever), ver lista de pacientes, ver lista de médicos, remover médicos, o Client (paciente), onde os pacientes poderão realizar tarefas como se cadastrar, logar, visualizar seu perfil e ver os doutores disponíveis e o Cliente (médico) que terá acesso a funções semelhantes como logar, visualizar seu perfil, ver lista de pacientes e consultas.
 
