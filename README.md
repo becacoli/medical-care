@@ -1,52 +1,52 @@
 ## :hospital: Medical Care Management System
 
-Medical Care Management System consiste em uma plataforma web que auxilia no gerenciamento de pacientes e médicos de uma determinada clinica, formado basicamente por três tipos perfis, o Admin (atendente) que poderá adicionar os médicos (de forma que os médicos não poderão se inscrever), ver lista de pacientes, ver lista de médicos, remover médicos, o Client (paciente), onde os pacientes poderão realizar tarefas como se cadastrar, logar, visualizar seu perfil e ver os doutores disponíveis e o Cliente (médico) que terá acesso a funções semelhantes como logar, visualizar seu perfil, ver lista de pacientes e consultas.
+Medical Care is a management system of patients and doctors of a given clinic. Basically there are three profiles types: Admin, Patients and Doctors. The Admin will be able to add the doctos (so doctors won't be able to registres), see list of patients, see list of doctors, remove doctors. The Patients will be able to perform tasks such as registering, login, viewing their profile and seeing available doctor. And the Doctos will have acess to similar functions such as login, viewing their profile, seeing a list of patients and queries.
 
-### **Principais funcionalidades:**
+### **Main Features:**
 
 ---
 
-**Do Cliente (Pacientes):**
+**Class Patients**
 
-- *Criar uma conta*
-- Logar
-- Visualizar seu perfil
-- Visualizar a lista de médicos
-- Marcar consulta
-- *Pagar*
-- Dar feedbacks
-- Ver relatório médico
+- _Create an account_
+- Login
+- View profile
+- View doctor list
+- Make an medical consultation
+- _Payment_
+- Write feedbacks
+- View medical report
 
-**Do Cliente (Médicos):**
+**Class Doctors:**
 
-- Logar
-- Visualizar seu perfil
-- Visualizar lista de pacientes
-- Ver consultas
-- Ver feedback dado pelos pacientes
-- Escrever relatórios
+- Login
+- View profile
+- View patients list
+- View queries
+- View feedbacks
+- Write medical report
 
-**(Admin) Atendente:**
+**Class Admin:**
 
-- Marcar consultas
-- Ver lista de pacientes e médicos
-- Pagamento
-- Adicionar e remover médicos
+- Make an medical consultation
+- View doctors and patients list
+- Payment
+- Add and remove doctos
 
-### Tecnologias utilizadas
+### Technologies
 
 ---
 
 - Java
 
-### Planejamento de telas
+### Design planning
 
 ---
 
-- Cadastro
-- Perfis
-- Lista de pacientes e médicos
-- Formulário de feedback do paciente
-- Relatório médico
-- Tela de pagamento
-- Marcar consulta
+- Registration
+- Profiles
+- Patients and doctors list
+- Patient feedback forms
+- Medical Report
+- Payment screen
+- Make an medical consultation
