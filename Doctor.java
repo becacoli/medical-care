@@ -35,4 +35,10 @@ public class Doctor {
   public String sendMedicalReports(){
     return medicalReports;
   }
+
+  @Override
+  public String toString() {
+    // TODO Auto-generated method stub
+    return String.format("Nome: %s \nE-mail: %s \nEspecialização: %s", name, email, specialization);
+  }
 }
