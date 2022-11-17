@@ -31,10 +31,12 @@ public class Patients{
     sc.close();
   }
   
+  
   public String sendFeedback() {
     return feedback;
   }
   
+  // TENTATIVA DE COMPOSIÇÃO
   public void AddMedicalReports(Doctor doctor){
     medicalReportsReceived.add(doctor.sendMedicalReports());
   }
