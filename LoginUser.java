@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LoginDoctor implements Login {
+public class LoginUser implements Login {
 
   @Override
   public Credentials login() {
@@ -9,19 +9,11 @@ public class LoginDoctor implements Login {
     Scanner sc = new Scanner(System.in);
     String user = sc.next();
     System.out.print("Digite sua senha:\n ");
-    System.out.println();
+    //System.out.println();
     String senha = sc.next();
-    System.out.printf(senha);
-
-    System.out.println("\nDigite 0 para entrar: ");
-    String entrar = sc.next();
-
-    if (entrar != "0") {
-      System.out.println("Tente novamente");
-    }
 
     sc.close();
-    return new Credentials(user, senha);
+    return new Credentials(user.strip(), senha.strip());
   }
 
 }
