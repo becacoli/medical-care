@@ -17,6 +17,4 @@ public class Credentials {
     this.email = email;
     this.password = password;
   }
-
-  
 }
