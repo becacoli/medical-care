@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Doctor {
-  private String name;
-  private String email;
-  private String specialization;
+  String name;
+  String email;
+  String specialization;
   private ArrayList<String> feedbackReceived;
 
   private String medicalReports;
