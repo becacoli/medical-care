@@ -1,13 +1,12 @@
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Patients{
 
-  private String name;
-  private String email;
-  private java.util.Date birthDate;
-
+  String name;
+  String email;
+  String birthDate;
+  String password;
   
   private ArrayList<String> medicalReportsReceived;
   private ArrayList<String> appointmentScheduled;
@@ -15,10 +14,11 @@ public class Patients{
   private String feedback;
   
   
-  public Patients(String name, String email, Date birthDate) {
+  public Patients(String name, String email, String birthDate, String password) {
     this.name = name;
     this.email = email;
     this.birthDate = birthDate;
+    this.password = password;
     
     this.medicalReportsReceived = new ArrayList<>();
     
@@ -57,15 +57,12 @@ public class Patients{
     return email;
   }
 
+  public String getPassword(){
+    return password;
+  }
+
   public void setEmail(String email) {
     this.email = email;
   }
 
-  public java.util.Date getBirthDate() {
-    return birthDate;
-  }
-
-  public void setBirthDate(java.util.Date birthDate) {
-    this.birthDate = birthDate;
-  }
 }
