@@ -2,10 +2,6 @@ import java.util.Scanner;
 
 public class RegisterPatients {
 
-  // botando o cara no sistema
-  // levar ele pra tela de login após cadastro?
-  // o q é preciso pra cadastar?
-
   public static Credentials signIn() {
 
     System.out.println("Digite os seguintes dados para se cadastrar: ");
@@ -22,9 +18,7 @@ public class RegisterPatients {
     System.out.println("Digite sua senha: ");
     String password = sc.nextLine();
 
-
-    sc.close();
     return new Credentials(name, email, birthDate, password);
   }
-  
+
 }

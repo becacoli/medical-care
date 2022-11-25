@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Doctor {
   String name;
@@ -16,24 +15,24 @@ public class Doctor {
     this.feedbackReceived = new ArrayList<>();
   }
 
-  // segundo construtor para criação do relatório médico
-  public Doctor(){
-    Scanner sc = new Scanner(System.in);
-    System.out.print("Digite um texto:");
-    medicalReports = sc.next();
-    sc.close();
+  public Doctor() {
   }
 
-  public void AddFeedbacks(Patients patient){
+  public void AddFeedbacks(Patients patient) {
     feedbackReceived.add(patient.sendFeedback());
   }
 
-  public ArrayList<String> getFeedbackReceived(){
+  public ArrayList<String> getFeedbackReceived() {
     return feedbackReceived;
   }
 
-  public String sendMedicalReports(){
+  public String sendMedicalReports() {
     return medicalReports;
+  }
+
+  public void showOptions() {
+    System.out.println("\nO que você deseja fazer?");
+    System.out.println("1. Ver a lista de pacientes");
   }
 
   @Override
