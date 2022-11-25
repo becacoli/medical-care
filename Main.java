@@ -6,6 +6,7 @@ public class Main {
 
     Admin admin = new Admin();
     admin.AddDoctors();
+    admin.AddDummyPatients();
 
     System.out.println("-------------------------------");
     System.out.println("Seja bem-vindo ao Medical Care");
@@ -19,22 +20,52 @@ public class Main {
     switch (login) {
       // doctor
       case 1:
-        LoginDoctor loginDoctor = new LoginDoctor();
+        LoginUser loginDoctor = new LoginUser();
         Credentials logIn = loginDoctor.login();
 
-        if (!admin.getLoginDoctor().containsKey(logIn)) {
-          System.out.println("Crendenciais inválidas!");
-          System.exit(1);
+        Doctor doctor = admin.authDoctor(logIn);
+        if(doctor != null) {
+            System.out.printf("|Seus dados: \n|Nome: %s \n|E-mail: %s\n|Especialização: %s", doctor.name, doctor.email, doctor.specialization);
+        } else {
+          System.out.println("É nulo");
         }
-
-        // pegando o valor da hashmap de acordo com o logIn que foi digitado
-        Doctor doctor = admin.getLoginDoctor().get(logIn);
-        System.out.println(doctor);
+              
 
         break;
       // patient
       case 2:
+      System.out.println("-------------------------------------------");
+       System.out.println("| Você já é paciente? Digite 1 para LOGAR |");
+       System.out.println("-------------------------------------------");
+       System.out.println("----------------------------------------------------");
+       System.out.println("| Ainda não é paciente? Digite 2 para se CADASTRAR |");
+       System.out.println("----------------------------------------------------");
+        Integer resp = sc.nextInt();
 
+        if (resp == 1){
+
+          //login paciente
+
+          LoginUser loginPatient = new LoginUser();
+          Credentials logInP = loginPatient.login();
+
+          Patients patient = admin.authPatient(logInP);
+
+          if(patient != null) {
+              System.out.println(patient.name);
+          } else {
+            System.out.println("É nulo");
+          }
+
+        } else if (resp == 2){
+          //cadastro do paciente
+          Credentials patientRegistration = RegisterPatients.signIn();
+          Patients patient = new Patients(patientRegistration.name, patientRegistration.email, patientRegistration.birthDate, patientRegistration.password);
+          admin.addPatients(patient);
+          System.out.printf("|Seus dados: \n|Nome: %s \n|E-mail: %s\n|Data de nascimento: %s", patient.name, patient.email, patient.birthDate);
+          //alerta: falta fazer o login pra tela de quem acabou de cadastrar
+          
+        } else System.out.println("Tente novamente.");
         break;
       default:
         System.out.println("Código inválido! Reenvie.");
