@@ -23,7 +23,7 @@ having created the images, run the servers using:
 
 ---
 
-## Main Features
+## Main Features 💻
 
 **Class Patients**
 
@@ -40,7 +40,6 @@ having created the images, run the servers using:
 - Login
 - View profile
 - View patients list
-- View feedbacks
 
 **Class Admin:**
 
