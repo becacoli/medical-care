@@ -2,6 +2,8 @@
 
 Medical Care is a management system of patients and doctors of a given clinic. Basically there are three profiles types: Admin, Patients and Doctors. The Admin will be able to add the doctos (so doctors won't be able to registres), see list of patients, see list of doctors, remove doctors. The Patients will be able to perform tasks such as registering, login, viewing their profile and seeing available doctor. And the Doctos will have acess to similar functions such as login, viewing their profile, and seeing a list of patients.
 
+
+### **Main Features:**
 ---
 
 ## How to make it work? 🧑🏼‍💻
@@ -17,6 +19,7 @@ and build the images using:
 having created the images, run the servers using:
 
 `$ docker run -it -p 8080:8080 --name poo-container poo`
+
 
 ---
 
@@ -51,3 +54,4 @@ having created the images, run the servers using:
 ---
 
 - Java
+
