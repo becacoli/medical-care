@@ -53,7 +53,7 @@ public class Patients {
   }
 
   public void showOptions() {
-    System.out.println("O que você deseja fazer?");
+    System.out.println("\nO que você deseja fazer?");
     System.out.println("1. Ver a lista de médicos");
     System.out.println("2. Dar feedback sobre a Medical Care");
   }
