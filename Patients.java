@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Patients {
 
   String name;
@@ -7,8 +5,6 @@ public class Patients {
   String birthDate;
   String password;
 
-  private ArrayList<String> medicalReportsReceived;
-  private String feedback;
 
   public Patients(String name, String email, String birthDate, String password) {
     this.name = name;
@@ -16,20 +12,7 @@ public class Patients {
     this.birthDate = birthDate;
     this.password = password;
 
-    this.medicalReportsReceived = new ArrayList<>();
 
-  }
-
-  public Patients() {
-  }
-
-  public String sendFeedback() {
-    return feedback;
-  }
-
-  // TENTATIVA DE COMPOSIÇÃO
-  public void AddMedicalReports(Doctor doctor) {
-    medicalReportsReceived.add(doctor.sendMedicalReports());
   }
 
   public String getName() {
