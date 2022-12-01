@@ -1,33 +1,15 @@
-import java.util.ArrayList;
 
 public class Doctor {
   String name;
   String email;
   String specialization;
-  private ArrayList<String> feedbackReceived;
 
-  private String medicalReports;
 
   public Doctor(String name, String email, String specialization) {
     this.name = name;
     this.email = email;
     this.specialization = specialization;
-    this.feedbackReceived = new ArrayList<>();
-  }
-
-  public Doctor() {
-  }
-
-  public void AddFeedbacks(Patients patient) {
-    feedbackReceived.add(patient.sendFeedback());
-  }
-
-  public ArrayList<String> getFeedbackReceived() {
-    return feedbackReceived;
-  }
-
-  public String sendMedicalReports() {
-    return medicalReports;
+    
   }
 
   public void showOptions() {
